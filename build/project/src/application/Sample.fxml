@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="521.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="ButtonCon" layoutX="538.0" layoutY="47.0" mnemonicParsing="false" text="接続" />
+            <Button id="ButtonDisCon" layoutX="627.0" layoutY="47.0" mnemonicParsing="false" text="切断" />
+            <TextField id="TxtIP" layoutX="257.0" layoutY="47.0" />
+            <TextField id="TxtPort" layoutX="257.0" layoutY="109.0" />
+            <TextArea id="txt1" layoutX="35.0" layoutY="204.0" prefHeight="243.0" prefWidth="662.0" />
+            <Label id="lblip" layoutX="35.0" layoutY="54.0" text="IP" />
+            <Label layoutX="35.0" layoutY="116.0" text="port" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

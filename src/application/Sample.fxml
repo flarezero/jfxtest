@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="521.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="ButtonCon" fx:id="btnconn" layoutX="538.0" layoutY="47.0" mnemonicParsing="false" onAction="#ClientConn" prefHeight="25.0" prefWidth="76.0" text="接続" />
+            <Button id="ButtonDisCon" fx:id="btndisconn" layoutX="619.0" layoutY="47.0" mnemonicParsing="false" onAction="#ClientDisConn" prefHeight="25.0" prefWidth="78.0" text="切断" />
+            <TextField id="TxtIP" fx:id="txtIp" layoutX="257.0" layoutY="47.0" text="127.0.0.1" />
+            <TextField id="TxtPort" fx:id="txtPort" layoutX="257.0" layoutY="109.0" text="4000" />
+            <TextArea id="txt1" fx:id="txtAreaSend" layoutX="34.0" layoutY="339.0" prefHeight="111.0" prefWidth="666.0" />
+            <Label id="lblip" layoutX="35.0" layoutY="54.0" text="IP" />
+            <Label layoutX="35.0" layoutY="116.0" text="port" />
+            <Button id="btblistener" fx:id="btnListener" layoutX="539.0" layoutY="109.0" mnemonicParsing="false" onAction="#ListenerOn" prefHeight="45.0" prefWidth="158.0" text="サーバー起動/停止" />
+            <Label layoutX="538.0" layoutY="23.0" text="クライアント操作" />
+            <Button id="btnclsend" layoutX="627.0" layoutY="462.0" mnemonicParsing="false" onAction="#CilentSend" prefHeight="25.0" prefWidth="70.0" text="送信" />
+            <TextArea id="txt1" fx:id="txtAreaRecv" editable="false" layoutX="31.0" layoutY="191.0" prefHeight="111.0" prefWidth="671.0" />
+            <Label layoutX="33.0" layoutY="174.0" text="受信" />
+            <Label layoutX="33.0" layoutY="312.0" text="送信" />
+            <Label fx:id="lblClient" layoutX="639.0" layoutY="23.0" text="切断" />
+            <Label layoutX="538.0" layoutY="85.0" text="サーバー操作" />
+            <Label fx:id="lblServer" layoutX="639.0" layoutY="85.0" text="停止" />
+            <Button fx:id="btnRecvClear" layoutX="630.0" layoutY="308.0" mnemonicParsing="false" onAction="#RecvAreaClear" prefHeight="25.0" prefWidth="70.0" text="受信クリア" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
